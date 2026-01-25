@@ -24,7 +24,7 @@ The executable already includes **Python (with all required modules)** as well a
 
 # Making Your Own Windows Executable
 **Copy the folder _WindowsExecutable_ to your harddisk**
-- Install _pyinstaller_ in your Python environment
+- Install _pyinstaller_ (and all other requirements) in your Python environment, then activate it
 - Download portable gnuplot, extract it and add the whole folder `gnuplot`
   - Necessary for including into executable (I used version 6.0.2 sucessfully)
 - Replace .ico file for a real one (or disable icon usage)
