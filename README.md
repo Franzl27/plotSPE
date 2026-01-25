@@ -30,7 +30,7 @@ The executable already includes **Python (with all required modules)** as well a
 - Replace .ico file for a real one (or disable icon usage)
 - Add `plotSPE.py` to the folder
 - Run `createEXEwin.bat` in the folder
-  - If you want an executable suitable for the Windows "open with" dialogue run `createEXEwin.bat` instead
+  - If you want an executable suitable for the Windows "open with" dialogue run `createEXEwinauto.bat` instead
   
 The additional Python script is necessary to make changes to the source code, so that the obtained executable is no longer attached to a (visible) terminal or for a direct automatic plot (open with dialogue). 
 
