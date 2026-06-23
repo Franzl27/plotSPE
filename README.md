@@ -7,7 +7,7 @@ Processing and plotting of .Spe spectrum files from Maestro/GammaVision, making 
 
 partly AI generated, inconsistent messy spaghetti code without magic numbers - main goal fullfilled: _it works_!
 This program is best used as standalone **executable** for comfortable plotting and processing ASCII spectra in `.spe` format. But it also runs flawlessly as a Python3 script.
-The executable already includes **Python (with all required modules)** as well as **gnuplot**, which explains the comparatively large file size. No additional software installation is required.
+The executable already includes **Python (with all required modules)** as well as **gnuplot**, which explains the comparatively large file size. No additional software installation will be required.
 
 ---
 # GUI Interface
@@ -26,13 +26,15 @@ The executable already includes **Python (with all required modules)** as well a
 **Copy the folder _WindowsExecutable_ to your harddisk**
 - Install _pyinstaller_ (and all other requirements) in your Python environment, then activate it
 - Download portable gnuplot, extract it and add the whole folder `gnuplot`
-  - Necessary for including into executable (I used version 6.0.2 sucessfully)
+  - Recommended for including into executable (I used version 6.0.2 sucessfully)
+  - Just add the unchanged `gnuplot` folder to your project's directory
 - Replace .ico file for a real one (or disable icon usage)
-- Add `plotSPE.py` to the folder
+- Add `plotSPE.py` to the same folder
 - Run `createEXEwin.bat` in the folder
-  - If you want an executable suitable for the Windows "open with" dialogue run `createEXEwinauto.bat` instead
+  - If you want an executable suitable for the Windows "open with" dialogue run `createEXEwinauto.bat` 
+  - Any automation will be disabled, standard action is interactive plotting
   
-The additional Python script is necessary to make changes to the source code, so that the obtained executable is no longer attached to a (visible) terminal or for a direct automatic plot (open with dialogue). 
+The additional Python then script is run, necessary to make changes to the source code, so that the obtained executable is no longer attached to a (visible) terminal or for a direct automatic plot (open with dialogue). 
 
 # Program Startup and Configuration Files
 
